@@ -23,7 +23,7 @@ FRAME_SIZE = int(RATE * FRAME_DURATION / 1000)  # Frame size in samples
 CHUNK = FRAME_SIZE * 2  # Frame size in bytes (16-bit = 2 bytes per sample)
 
 
-genai.configure(api_key="AIzaSyBOtrzDEi16T5umPpea0kNhf4_WyOO7S04")
+genai.configure(api_key="") # your own API key here
 generation_config = {
     'max_output_tokens' : 250, 
     'temperature' : 1,
